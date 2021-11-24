@@ -68,9 +68,9 @@ if(_actions.includes(right) && i === zero[0] && j === zero[1] - 1)
 return successor(state, right)
 else if(_actions.includes(left) && i === zero[0] && j === zero[1] + 1)
 return successor(state, left)
-else if(_actions.includes(up) && i === zero[0] + 1 && j === zero[0])
+else if(_actions.includes(up) && i === zero[0] + 1 && j === zero[1])
 return successor(state, up)
-else if(_actions.includes(down) && i === zero[0] - 1 && j === zero[0])
+else if(_actions.includes(down) && i === zero[0] - 1 && j === zero[1])
 return successor(state, down)
 else
 return state
